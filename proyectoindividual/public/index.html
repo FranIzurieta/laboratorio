@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Crux</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina para la librería Crux">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header_principal">
+        <img src="../public/imgs/CAFEBUBO2.png" alt="Logo Crux BiblioCafé">
+        <nav>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Iniciar sesión</button>
+
+                <div id="id01" class="modal">
+                  
+                  <form class="modal-content animate" action="/action_page.php">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+                    <div class="imgcontainer">  
+                      <img src="../public/imgs/login-msg.png" alt="Avatar" class="avatar">
+                    </div>
+                
+                    <div class="container">
+                      <label for="uname"><b>Nombre de Usuario</b></label>
+                      <input type="text" placeholder="ingrese usuario" name="uname" required>
+                
+                      <label for="psw"><b>Contraseña</b></label>
+                      <input type="password" placeholder="Ingrese contraseña" name="psw" required>
+                        
+                      <button type="submit">Iniciar sesión</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Recordarme  
+                      </label>
+                    </div>
+                
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">¡Olvidé mi <a href="#">contraseña!</a></span>
+                    </div>
+                  </form>
+                </div>
+                
+            <a href="nosotros">Nosotros</a>
+            <a href="">Contáctenos</a>
+
+            
+        </nav>
+    </header>
+
+    <section id="nosotros">
+        <div>
+        <h1>Crux BiblioCafé</h1>
+        <h2>El sueño de ofrecer un concepto diferente de librería</h2>
+
+        
+       
+        <p id="pNosotros">Crux es toda una experiencia, ya que no sólo usted puede adquirir o solicitar una variedad de libros para todos los gustos y edades, de origen costarricense o internacional, sino que puede escoger de nuestros estantes libros de temporada de libre uso, en un ambiente de bistró. </p>
+
+        <div id="call2Action">
+                <div>
+                    <p>¡A un click de distancia para hacer llegar el aromaterapia más increíble del mundo a sus manos: libros! </p>
+                </div>
+                <div>
+                    <button type="button" id="btnAgregar" onClick="location.href='registro_linea.html'">¡Regístrese gratis!</button>
+
+                    
+        
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="info_cafe">
+        <div class="info_cafe">
+            <p>100+ juegos de mesa para compartir</p>
+            
+           <img src="../public/imgs/kisspng-chess-piece-black-knight-computer-icons-knight-chess-icon-5ab0bec929ddf4.3265872815215326171715.png" alt="Juegos de Mesa">
+         </div> 
+         <div class="info_cafe">
+                <p>Más de 1000 títulos de libros</p>
+                
+               <img src="../public/imgs/kisspng-book-computer-icons-scalable-vector-graphics-bibli-icons-png-book-download-5ab02dd126acc2.7187615015214955051584.png" alt="icono libros">
+             </div> 
+
+             <div class="info_cafe">
+                    <p>Menú gourmet a precios cómodos</p>
+                    <img src="../public/imgs/kisspng-white-coffee-tea-cafe-computer-icons-cup-of-coffee-icon-5ab0dba06e27c4.6219462115215400004512.png" alt="icono café">
+            </div> 
+
+        
+
+    </section>
+<script src="../public/js/controlador_menu.js"></script>
+</body>
+
+<div class="footer">
+        <p>Crux BiblioCafé</p>
+        
+</div>

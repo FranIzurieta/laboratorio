@@ -1,0 +1,67 @@
+#seleccionCliente button{
+    display: inline;
+    margin-left: 40px;
+    text-decoration: #FFFFFF
+    color: #FFFFFF;
+}
+.divSubirImagen{
+    margin-left: 100px;
+}
+.divSubirImagen input{
+        font-family: inherit;
+        font-size: 20px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+.divSubirImagen input:hover {
+        opacity: 0.8;
+    }
+
+/* INICIO boton registrar*/
+.btn_registrar {
+    display: block;
+    border-radius: 4px;
+    background-color: rgba(10, 61, 98,1.0);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 30px auto 80px;
+  }
+  
+  .btn_registrar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn_registrar span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+.btn_registrar:hover span {
+    padding-right: 25px;
+  }
+  
+.btn_registrar:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/* FIN boton registrar*/

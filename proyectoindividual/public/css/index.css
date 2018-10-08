@@ -1,0 +1,257 @@
+.header_principal nav{
+    height: auto;
+    float: right;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    width: auto;
+}
+.header_principal img{
+    height: 130px;
+    width: 130px;
+
+}
+
+.header_principal button{
+    width: auto;
+    margin-right: 50px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    padding-left: 300px;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 20%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Fondo del modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.modal img{
+    display: block;
+    height:30%;
+    width: 30%;
+}
+
+/* el boton para cerrar (x) */
+.close {
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 8px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+#nosotros{
+    background-image: url('../imgs/joanna-kosinska-470407-unsplash.jpg');
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 250px;
+    height:550px;
+    
+}
+
+#nosotros h1{
+    font-size: 54px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 1600px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 56, 56,0.1);
+    color: #ff9f1a;
+    width: 400px;
+    padding-right: 5px;
+    font-family: 'Grand Hotel', cursive;
+
+}
+
+#nosotros h2{
+    width: 600px;
+    font-size: 40px;
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 300px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    background-color:rgba(255, 56, 56,0.1);
+    color: #ff9f1a;
+
+}
+#pNosotros{
+    width: 500px;
+    margin: 0 auto; /*para centrar el párrafo*/
+    /*color: #f7d794;*/
+    margin-top: 50px;
+    padding: 40px;
+    padding-right: 150px;
+    text-align: right;
+    font-size: 25PX;
+    line-height: 25px;/*interlineado*/
+    float: right ;
+    
+    color: rgb(12, 12, 12);/*se selecciona en flatuicolors y se cambia el último rubro para la opacidad; asi no se cambia el color de la fuente. PARA OTROS CASOS, si se utiliza el OPACITY*/
+    background-color: rgba(250, 211, 144,0.75);
+    border-radius: 25px 0 0 25px;
+}
+#call2Action{
+    text-size-adjust: auto;
+    text-align: -webkit-left;
+    text-justify: auto;
+    font-size: 20px;
+    margin-left: 1000px;
+    margin-right:100px;
+    margin-top: 50px;
+    float: right;
+    border-radius: 10px;
+    width: 450px;
+    color: antiquewhite;
+
+}
+#call2Action p{
+    width: 450px;
+    height: 70px;
+    padding-left: 20px;
+    padding-right:120px;
+    background-color: none;
+    text-align: center;
+}
+#call2Action button{
+   font-family: inherit;
+   font-size: 20px;
+   background-color: rgba(10, 61, 98,1.0);
+   color:rgba(130, 204, 221,1.0);
+   padding: 20px 80px 20px;
+   
+   margin-left:70px;
+   border: none;
+   border-radius: 25px;
+}
+
+#info_cafe{
+    background-color: black;    
+    background-size: cover;
+    height: 180px;
+}
+.info_cafe{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 100px;
+    
+}
+.info_cafe img {
+height:130px;
+width:120px;
+margin: 10px 200px 5px 20px;
+float: left;
+margin-right: 200px;
+border-left: gray solid;
+
+}
+
+.info_cafe p{
+    color:#504f4f;
+    float: left;
+    width: 130px;
+    margin-left: 40px;
+    padding-top: 50px;
+    
+}
+
