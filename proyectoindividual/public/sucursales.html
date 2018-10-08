@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sucursales</title>
+    <meta name="description" content="Pagina de listado de sucursales">
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sucursales.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <header class="header_principal">
+        <img src="../public/imgs/CAFEBUBO2.png" alt="Logo de Bubo">
+
+        <nav class="navSuperior">
+            <a href="">Cerrar Sesión</a>
+            <span id="txtNav" style="cursor:pointer" onclick="abrirNav()">&#9776;Menú</span>
+        </nav>
+    </header>
+
+    <div id="menuLateral" class="navLateral">
+        <ul>
+            <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+
+
+            <li><a href="libros.html">Libros</a></li>
+            <ul>
+                <li><a href="registro_libros.html">Registrar libros</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_libros.html">Modificar libros</a></li>
+            </ul>
+
+            <li><a href="editoriales.html">Editoriales</a></li>
+            <ul>
+                <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_editoriales.html">Modificar editoriales</a></li>
+            </ul>
+
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <ul>
+                <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+            </ul>
+
+            <li><a href="reservas.html">Reservas</a></li>
+
+            <li><a href="comprobantes.html">Comprobantes</a></li>
+        </ul>
+    </div>
+
+    <h1>Sucursales</h1>
+
+    <div class="contenedorConGrid">
+        <div class="filtroSuperior">
+            <h2><input type="text" id="filtrarLibros" placeholder="Filtrar..."> </h2>
+        </div>
+        <div class="btnSuperior">
+            <button type="button" id="btnAgregar">Agregar</button>
+        </div>
+
+    </div>
+    <section id="sucursales">
+        <table class="tabla" id="tbl_sucursales">
+            <thead>
+                <!--titulos primer row-->
+                <tr>
+                    <!--table rows-->
+                    <th>Código</th>
+                    <th>Sucursal</th>
+                    <th>Teléfono</th>
+                    <th>Ubicación</th>
+                    <th>Dirección</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <!--table data-->
+                    <td>001</td>
+                    <!--Código-->
+                    <td>Escazú</td>
+                    <!--Sucursal-->
+                    <td>22928801</td>
+                    <!--Teléfono-->
+                    <td>
+                        <button style="width:100px;">Ver Ubicación</button>
+                    </td>
+                    <!--Ubicación-->
+                    <td>100 mts. del AMPM, Escalante</td>
+                    <!--Dirección-->
+                    <td>
+                        <button><i class="fas fa-eye"></i></button>
+                        <button onClick="location.href='modificar_sucursales.html'"><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <!--table data-->
+                    <td>002</td>
+                    <!--Código-->
+                    <td>San José</td>
+                    <!--Sucursal-->
+                    <td>22928802</td>
+                    <!--Teléfono-->
+                    <td>
+                        <button style="width:100px;">Ver Ubicación</button>
+                    </td>
+                    <!--Ubicación-->
+                    <td>101 mts. del MasxMenos, Escalante de San José</td>
+                    <!--Dirección-->
+                    <td>
+                        <button><i class="fas fa-eye"></i></button>
+                        <button onClick="location.href='modificar_sucursales.html'"><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <!--table data-->
+                    <td>003</td>
+                    <!--Código-->
+                    <td>Tibas</td>
+                    <!--Sucursal-->
+                    <td>22928802</td>
+                    <!--Teléfono-->
+                    <td>
+                        <button style="width:100px;">Ver Ubicación</button>
+                    </td>
+                    <!--Ubicación-->
+                    <td>103 mts del AMPM de Tibás centro</td>
+                    <!--Dirección-->
+                    <td>
+                        <button><i class="fas fa-eye"></i></button>
+                        <button onClick="location.href='modificar_sucursales.html'"><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+
+                <br>
+                <tr>
+                    <!--table data-->
+                    <td>004</td>
+                    <!--Código-->
+                    <td>Escazú</td>
+                    <!--Sucursal-->
+                    <td>22928805</td>
+                    <!--Teléfono-->
+                    <td>
+                    <button style="width:100px;">Ver Ubicación</button>
+
+                    </td>
+                    <!--Ubicación-->
+                    <td>150 mts. del AMPM de Escazú centro</td>
+                    <!--Dirección-->
+                    <td>
+                        <button><i class="fas fa-eye"></i></button>
+                        <button onClick="location.href='modificar_sucursales.html'"><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+
+                <br>
+            </tbody>
+        </table>
+    </section>
+
+
+    <script src="../public/js/controlador_menu.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

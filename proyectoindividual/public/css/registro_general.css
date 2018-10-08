@@ -1,0 +1,49 @@
+
+.divFormIzquierdo form{
+    padding-top: 15px;
+    width: 200px;  
+}
+
+.divFormIzquierdo div{
+padding-bottom: 40px;  
+}
+.divFormIzquierdo input{
+    width: 100%;
+    height: 20px; 
+    font-size: 18px;   
+}
+
+.divFormIzquierdo select{
+        width: 300px;
+        display: block;
+        height: 30px;
+        font-family: inherit;
+        font-size: 18px;
+        text-align-last: center;
+        color: blanchedalmond;
+        background-color: #b33939;
+
+     font-family: inherit;
+     padding-bottom: 40px;
+ 
+   }
+
+.divSubirImagen{
+    margin-left: 100px;
+    }
+
+.divSubirImagen input{
+    font-family: inherit;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    }
+    
+.divSubirImagen input:hover {
+        opacity: 0.8;
+    }

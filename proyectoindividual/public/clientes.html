@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Clientes</title>
+    <meta name="description" content="Pagina de listado de libros Bubo">
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/libros.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sucursales.css" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <header class="header_principal">
+        <img src="../public/imgs/CAFEBUBO2.png" alt="Logo de Bubo">
+        
+        <nav class="navSuperior">
+            <a href="">Cerrar Sesión</a>
+            <span id="txtNav" style="cursor:pointer" onclick="abrirNav()">&#9776;Menú</span>
+        </nav>
+
+        
+    
+    </header>
+
+    <div id="menuLateral" class="navLateral">
+            <ul>
+                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+                   
+                               
+                <li><a href="libros.html">Libros</a></li>
+                   <ul>
+                       <li><a href="registro_libros.html">Registrar libros</a></li>
+                   </ul>
+                   <ul>
+                       <li><a href="modificar_libros.html">Modificar libros</a></li>
+                   </ul>
+           
+                <li><a href="editoriales.html">Editoriales</a></li>    
+                <ul>
+                       <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+                   </ul>
+                   <ul>
+                       <li><a href="modificar_libros.html">Modificar editoriales</a></li>
+                   </ul>
+
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <ul>
+                       <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+                   </ul>
+                   <ul>
+                       <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+                   </ul>
+
+                <li><a href="reservas.html">Reservas</a></li>
+
+                <li><a href="comprobantes.html">Comprobantes</a></li>
+           </ul>
+        </div>
+
+    <h1>Clientes</h1>
+    <h2>Lista de clientes</h2>
+<div class="contenedorConGrid">
+    <div class="filtroSuperior">
+    <h2><input type="text"  id="filtrarLibros"  placeholder="Filtrar..."> </h2>
+</div>
+    <div class= "btnSuperior">
+            <a href="registro_libros.html">
+                <button type="button" id="btnAgregar">Agregar</button>
+            </a>
+     </div>
+
+</div>
+
+    <section id="libros">
+        <table class="tabla" id="tbl_libros">
+            <thead>
+                <!--titulos primer row-->
+                <tr>
+                    <!--table rows-->
+                    <th>Cédula</th>
+                    <th>Primer nombre</th>
+                    <th>Segundo Nombre</th>
+                    <th>Primer apellido</th>
+                    <th>Segundo apellido</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Edad</th>
+                    <th>Sexo</th>
+                    <th></th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9788415551218</td>
+                    <!--table data-->
+                    <td>Cien Años de Soledad</td>
+                    <td>Realismo mágico, Novela</td>
+                    <td>Harper</td>
+                    <td>11 500</td>
+                    <td>Gabriel García Márquez</td>
+                    <td><img src="../public/imgs/CienAñosSoledad.jpeg"></td>
+                    <td><button><i class="fas fa-eye"></i></button>
+                        <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <td> 9788489666153</td>
+                <!--table data-->
+                <td>Rayuela</td>
+                <td>Novela, Ficción especulativa</td>
+                <td>Pantheon Books</td>
+                <td>8500</td>
+                <td>Julio Cortázar</td>
+                <td><img src="../public/imgs/rayuela.jpeg"></td> 
+                <td>
+                    <button><i class="fas fa-eye"></i></button>
+                    <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
+                    <button><i class="fas fa-trash-alt"></i></button></td>
+
+                <tr>
+                    <td>9788446001188</td>
+                    <!--table data-->
+                    <td>Mitos Nórdicos</td>
+                    <td>Mitología</td>
+                    <td>AKAL</td>
+                    <td>5600</td>
+                    <td>R.I. Page</td>
+                    <td><img src="../public/imgs/mitosNordicos.jpeg"></td>
+                    <td><button><i class="fas fa-eye"></i></button>
+                        <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                </tr>
+
+                <tr>
+                        <td>9788446001188</td>
+                        <!--table data-->
+                        <td>El Misterioso Caso de Styles</td>
+                        <td>Novela detectivesca</td>
+                        <td>John Lane</td>
+                        <td>7000</td>
+                        <td> Agatha Christie </td>
+                        <td><img src="../public/imgs/casoStyles2.jpeg"></td>
+                        <td><button><i class="fas fa-eye"></i></button>
+                            <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
+                            <button><i class="fas fa-trash-alt"></i></button>
+                </tr>
+                <tr>
+                    <td>9781789090147</td>
+                    <!--table data-->
+                    <td>God of War - The Official Novelization</td>
+                    <td>Mitología</td>
+                    <td>Titan Books</td>
+                    <td>12 700</td>
+                    <td>J. M. Barlog</td>
+                    <td><img src="../public/imgs/gow2.jpg"></td>
+                    <td><button><i class="fas fa-eye"></i></button>
+                        <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                </tr>
+
+                <tr>
+                    <td>9781789090147</td>
+                    <!--table data-->
+                    <td>God of War</td>
+                    <td>Mitología</td>
+                    <td>Del Rey</td>
+                    <td>12 700</td>
+                    <td>Matthew Stover</td>
+                    <td><img src="../public/imgs/gow.jpg"></td>
+                    <td><button><i class="fas fa-eye"></i></button>
+                        <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </section>
+
+
+<script src="../public/js/controlador_menu.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

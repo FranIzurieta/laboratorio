@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Crux-Registro de sucursales</title>
+        <meta name="description" content="Pagina de registro de editoriales Crux">
+        <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_general.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_sucursales.css" />
+        <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header_principal">
+             <img src="../public/imgs/CAFEBUBO2.png" alt="Logo de Bubo">
+
+             <nav class="navSuperior">
+             <a href="">Cerrar Sesión</a>
+            <span id="txtNav" style="cursor:pointer" onclick="abrirNav()">&#9776;Menú</span>
+             </nav>
+        </header>
+
+    <div id="menuLateral" class="navLateral">
+             <ul>
+                 <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+                    
+                                
+                 <li><a href="libros.html">Libros</a></li>
+                    <ul>
+                        <li><a href="registro_libros.html">Registrar libros</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="modificar_libros.html">Modificar libros</a></li>
+                    </ul>
+            
+                 <li><a href="editoriales.html">Editoriales</a></li>    
+                 <ul>
+                        <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="modificar_editoriales.html">Modificar editoriales</a></li>
+                    </ul>
+
+                 <li><a href="sucursales.html">Sucursales</a></li>
+                 <ul>
+                        <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+                    </ul>
+
+                 <li><a href="reservas.html">Reservas</a></li>
+
+                 <li><a href="comprobantes.html">Comprobantes</a></li>
+            </ul>
+    </div>
+
+
+     <h1>Registro de Sucursales</h1>
+     <h2>Datos de la sucursales</h2>
+    <div class="contenedorConGrid">
+         <div class="divFormIzquierdo">
+             <form>
+                 <div>
+                     <label id="codigoEditorial">Código</label>
+                     <input type="text" id="codigoEditorial">
+                 </div>
+                 <div>
+                     <label id="nombreSucursal">Nombre de la sucursal</label>
+                     <input type="text" id="nombreSucursal">
+                 </div>
+                 <div>
+                    <label id="numerotel">Teléfono</label>
+                    <input type="tel" id="numerotel">
+                 </div>
+
+                 <div>
+                     <label id="direccionSucursal">Dirección exacta</label>
+                     <textarea id="direccionSucursal" rows="5" cols="10"></textarea>
+                 </div> 
+             </form>
+
+        </div>
+            
+         <div class="mapa">
+             
+    
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0197106831365!2d-84.03322258433295!3d9.932316192897579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8!2sCenfotec!5e0!3m2!1ses-419!2scr!4v1537201381843" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    
+             
+         </div>
+    </div>
+    <div>
+              <button class="custom_button" type="button"><span>Registrar</span></button>
+     </div>
+
+     <script src="../public/js/controlador_menu.js"></script>
+    
+    </body>
+    
+
+    <div class="footer">
+        <p>Crux BiblioCafé</p>
+    </div>
+    
+ </html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Crux-Registro de Su</title>
+    <meta name="description" content="Pagina de registro de editoriales Crux">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/reservas.css" />
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header_principal">
+        <img src="../public/imgs/CAFEBUBO2.png" alt="Logo de Bubo">
+
+        <nav class="navSuperior">
+            <a href="">Cerrar Sesión</a>
+            <span id="txtNav" style="cursor:pointer" onclick="abrirNav()">&#9776;Menú</span>
+        </nav>
+    </header>
+
+    <div id="menuLateral" class="navLateral">
+        <ul>
+            <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+               
+                           
+            <li><a href="libros.html">Libros</a></li>
+               <ul>
+                       <li><a href="registro_libros.html">Registrar libros</a></li>
+                   </ul>
+               <ul>
+                       <li><a href="modificar_libros.html">Modificar libros</a></li>
+                   </ul>
+                        
+            <li><a href="editoriales.html">Editoriales</a></li>    
+            <ul>
+                       <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+                   </ul>
+               <ul>
+                       <li><a href="modificar_editoriales.html">Modificar editoriales</a></li>
+                   </ul>
+
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <ul>
+                       <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+                   </ul>
+               <ul>
+                       <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+                   </ul>
+
+            <li><a href="reservas.html">Reservas</a></li>
+
+            <li><a href="comprobantes.html">Comprobantes</a></li>
+        </ul>
+    </div>
+
+
+    <h1>Reservar libros</h1>
+
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <div class="book">
+                <img src="imgs//book/book_gow.jpg" class="image">
+                <p class="disponible ">Disponible: 4</p>
+                <br>
+                <h3>God of War</h3>
+                <p>GOW Studios</p>
+                <p>Precio: ‎₡7500</p>
+                <label class="amount_label"><input type="text" name="amount" placeholder="Ingresa cantidad aqui"></label>
+                <label><input type="checkbox" name="checkbox" value="value">Reservar</label>
+            </div>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <div class="book">
+                <img src="imgs/book/book_gow_2.jpg" class="image">
+                <p class="disponible ">Disponible: 2</p>
+                <br>
+                <h3>God of War 2</h3>
+                <p>GOW Studios</p>
+                <p>Precio: ‎₡7500</p>
+                <label class="amount_label"><input type="text" name="amount" placeholder="Ingresa cantidad aqui"></label>
+                <label><input type="checkbox" name="checkbox" value="value">Reservar</label>
+            </div>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+            <div class="book">
+                <img src="imgs/book/book_nordic_myths.jpeg" class="image">
+                <p class="disponible ">Disponible: 1</p>
+                <br>
+                <h3>Mitos Nórdicos</h3>
+                <p>R.I. Page</p>
+                <p>Precio: ‎₡7500</p>
+                <label class="amount_label"><input type="text" name="amount" placeholder="Ingresa cantidad aqui"></label>
+                <label><input type="checkbox" name="checkbox" value="value">Reservar</label>
+            </div>
+        </div>
+        <div class="column" style="background-color:#ddd;">
+            <div class="book">
+                <img src="imgs/book/book_rayuela.jpeg" class="image">
+                <p class="disponible ">Disponible: 3</p>
+                <br>
+                <h3>Rayuela</h3>
+                <p>Julio Cortázar</p>
+                <p>Precio: ‎₡7500</p>
+                <label class="amount_label"><input type="text" name="amount" placeholder="Ingresa cantidad aqui"></label>
+                <label><input type="checkbox" name="checkbox" value="value">Reservar</label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <div class="book">
+                <img src="imgs/book/book_styles.jpeg" class="image">
+                <p class="disponible ">Disponible: 4</p>
+                <br>
+                <h3>El misterioso caso de Styles</h3>
+                <p>Agatha Christie</p>
+                <p>Precio: ‎₡7500</p>
+                <label class="amount_label"><input type="text" name="amount" placeholder="Ingresa cantidad aqui"></label>
+                <label><input type="checkbox" name="checkbox" value="value">Reservar</label>
+            </div>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <div class="book">
+                <img src="imgs/book/book_the_raven.jpeg" class="image">
+                <p class="disponible ">Disponible: 1</p>
+                <br>
+                <h3>El Cuervo</h3>
+                <p>Edgar Allan Poe</p>
+                <p>Precio: ‎₡7500</p>
+                <label class="amount_label"><input type="text" name="amount" placeholder="Ingresa cantidad aqui"></label>
+                <label><input type="checkbox" name="checkbox" value="value">Reservar</label>
+            </div>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+            <div class="book">
+                <img src="imgs/book/book_100_years.jpeg" class="image">
+                <p class="disponible ">Disponible: 4</p>
+                <br>
+                <h3>Cien años de soledad</h3>
+                <p>Gabriel Garcia Márquez</p>
+                <p>Precio: ‎₡7500</p>
+                <label class="amount_label"><input type="text" name="amount" placeholder="Ingresa cantidad aqui"></label>
+                <label><input type="checkbox" name="checkbox" value="value">Reservar</label>
+            </div>
+        </div>
+        <div class="column" style="background-color:#ddd;">
+            <div class="book">
+                <img src="imgs/book/book_the_war.jpeg" class="image">
+                <p class="disponible ">Disponible: 4</p>
+                <br>
+                <h3>La guerra de los mundos</h3>
+                <p>H.G Wells</p>
+                <p>Precio: ‎₡7500</p>
+                <label class="amount_label"><input type="text" name="amount" placeholder="Ingresa cantidad aqui"></label>
+                <label><input type="checkbox" name="checkbox" value="value">Reservar</label>
+            </div>
+        </div>
+    </div>
+
+    <button class="custom_button"><span>Reservar</span></button>
+
+    <script src="../public/js/controlador_menu.js"></script>
+</body>
+<div class="footer">
+    <p>Crux BiblioCafé</p>
+</div>
+
+</html>
