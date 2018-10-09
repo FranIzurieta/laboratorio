@@ -112,7 +112,7 @@ h2{
 }
 /*Fin: estilos de las tablas*/
 /* Boton customizado*/
-.main_button {
+.custom_button {
     display: block;
     border-radius: 4px;
     background-color: rgba(10, 61, 98,1.0);
@@ -127,14 +127,14 @@ h2{
     margin: 30px auto 80px;
   }
 
-  .main_button span {
+  .custom_button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
   
-  .main_button span:after {
+  .custom_button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -143,11 +143,11 @@ h2{
     transition: 0.5s;
   }
   
-.main_button:hover span {
+.custom_button:hover span {
     padding-right: 25px;
   }
   
-.main_button:hover span:after {
+.custom_button:hover span:after {
     opacity: 1;
     right: 0;
   }
