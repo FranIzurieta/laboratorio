@@ -194,7 +194,7 @@ h2{
 .contenedorConGrid > div {
      font-size: 20px;
      }
-.divFormIzquierdo, .divSubirImagen{
+.divFormIzquierdo, .divSubirImagen, .mapa{
     grid-row-start: 1;
     grid-row-end: 2;
 
@@ -234,7 +234,8 @@ h2{
    
 
 .mapa {
-float: right;}
+float: right;
+height: 70%; width :50%; }
 
 
 
