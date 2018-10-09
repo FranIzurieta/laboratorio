@@ -7,7 +7,7 @@
         <meta name="description" content="Pagina Modificar Sucursales">
         <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_sucursales.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_general.css" />
         <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -63,45 +63,43 @@
                 <li><a href="comprobantes.html">Comprobantes</a></li>
            </ul>
         </div>
-    
-
+     
         <h1>Modificar Sucursales</h1>
-        
-         <div class="divFormIzquierdo">
-             <form>
-                 <div>
-                     <label id="codigoEditorial">Código</label>
-                     <input type="text" disabled value="001" id="codigoEditorial">
-                 </div>
-                 <div>
-                     <label id="nombreSucursal">Nombre de la sucursal</label>
-                     <input type="text" id="nombreSucursal" value ="Escazú">
-                 </div>
-                 <div>
-                    <label id="numerotel">Teléfono</label>
-                    <input type="tel" id="numerotel" value="22928801">
-                 </div>
-
-                 <div>
-                     <label id="direccionSucursal">Dirección exacta</label>
-                     <textarea id="direccionSucursal" rows="5" cols="10">100 mts. del AMPM, Escalante</textarea>
-                 </div> 
-             </form>
-
+        <div class="contenedorConGrid">
+            <div class="divFormIzquierdo">
+                <form>
+                    <div>
+                        <label id="codigoEditorial">Código</label>
+                        <input type="text" disabled value="001" id="codigoEditorial">
+                    </div>
+                    <div>
+                        <label id="nombreSucursal">Nombre de la sucursal</label>
+                        <input type="text" id="nombreSucursal" value ="Escazú">
+                    </div>
+                    <div>
+                       <label id="numerotel">Teléfono</label>
+                       <input type="tel" id="numerotel" value="22928801">
+                    </div>
+   
+                    <div>
+                        <label id="direccionSucursal">Dirección exacta</label>
+                        <textarea id="direccionSucursal" rows="5" cols="10">100 mts. del AMPM, Escalante</textarea>
+                    </div> 
+                </form>
+   
+           </div>
+               
+            <div class="mapa">
+                
+       
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0197106831365!2d-84.03322258433295!3d9.932316192897579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8!2sCenfotec!5e0!3m2!1ses-419!2scr!4v1537201381843" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+       
+                
+            </div>
+       </div>
+       <div>
+                 <button class="custom_button" type="button"><span>Actualizar</span></button>
         </div>
-            
-         <div class="mapa">
-             
-    
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0197106831365!2d-84.03322258433295!3d9.932316192897579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8!2sCenfotec!5e0!3m2!1ses-419!2scr!4v1537201381843" width="400" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-    
-             
-         </div>
-
-        <div>
-              <button class="custom_button" type="button"><span>Actualizar</span></button>
-         </div>
-
         <script src="../public/js/controlador_menu.js"></script>
     
     </body>
