@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8" />
-    <title>Clientes</title>
-    <meta name="description" content="Pagina de listado de libros Bubo">
+    <title>Usuarios</title>
+    <meta name="description" content="Pagina de listado de usuarios Crux">
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/libros.css" />
@@ -29,56 +29,63 @@
     </header>
 
     <div id="menuLateral" class="navLateral">
+        <ul>
+            <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+               
+            <li><a href="clientes.html">Usuarios</a></li>
+               <ul>
+                   <li><a href="registro_usuarios.html">Registrar usuarios</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_usuarios.html">Modificar usuarios</a></li>
+               </ul>               
+            <li><a href="libros.html">Libros</a></li>
+               <ul>
+                   <li><a href="registro_libros.html">Registrar libros</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_libros.html">Modificar libros</a></li>
+               </ul>
+       
+            <li><a href="editoriales.html">Editoriales</a></li>    
             <ul>
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
-                   
-                               
-                <li><a href="libros.html">Libros</a></li>
-                   <ul>
-                       <li><a href="registro_libros.html">Registrar libros</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_libros.html">Modificar libros</a></li>
-                   </ul>
-           
-                <li><a href="editoriales.html">Editoriales</a></li>    
-                <ul>
-                       <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_libros.html">Modificar editoriales</a></li>
-                   </ul>
+                   <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_libros.html">Modificar editoriales</a></li>
+               </ul>
 
-                <li><a href="sucursales.html">Sucursales</a></li>
-                <ul>
-                       <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
-                   </ul>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <ul>
+                   <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+               </ul>
 
-                <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
 
-                <li><a href="comprobantes.html">Comprobantes</a></li>
-           </ul>
-        </div>
+            <li><a href="comprobantes.html">Comprobantes</a></li>
+       </ul>
+    </div>
 
-    <h1>Clientes</h1>
-    <h2>Lista de clientes</h2>
+
+    <h1>Usuarios</h1>
+    <h2>Lista de usuarios</h2>
 <div class="contenedorConGrid">
     <div class="filtroSuperior">
     <h2><input type="text"  id="filtrarLibros"  placeholder="Filtrar..."> </h2>
 </div>
     <div class= "btnSuperior">
-            <a href="registro_libros.html">
+            <a href="registro_usuarios.html">
                 <button type="button" id="btnAgregar">Agregar</button>
             </a>
      </div>
 
 </div>
 
-    <section id="libros">
-        <table class="tabla" id="tbl_libros">
+    <section id="clientes">
+        <table class="tabla" id="tbl_clientes">
             <thead>
                 <!--titulos primer row-->
                 <tr>
@@ -88,95 +95,91 @@
                     <th>Segundo Nombre</th>
                     <th>Primer apellido</th>
                     <th>Segundo apellido</th>
+                    <th>Correo electrónico</th>
                     <th>Fecha de nacimiento</th>
                     <th>Edad</th>
                     <th>Sexo</th>
-                    <th></th>
+                    <th>Foto de perfil</th>
+                    <th><i class="fas fa-cogs"></i></th>
 
                 </tr>
 
             </thead>
             <tbody>
                 <tr>
-                    <td>9788415551218</td>
+                    <td>312012345612</td>
                     <!--table data-->
-                    <td>Cien Años de Soledad</td>
-                    <td>Realismo mágico, Novela</td>
-                    <td>Harper</td>
-                    <td>11 500</td>
-                    <td>Gabriel García Márquez</td>
-                    <td><img src="../public/imgs/CienAñosSoledad.jpeg"></td>
+                    <td>Laura</td>
+                    <td></td>
+                    <td>Pergolizzi</td>
+                    <td>Ruffo</td>
+                    <td>lpproductions@gmail.com</td>
+
+                    <td>18/03/1981</td>
+                    <td>37</td>
+                    <td>Mujer</td>
+
+                    <td><img class="imgUsuario" src="../public/imgs/usuarios/user_Laura_Pergolizzi.jpg"></td>
                     <td><button><i class="fas fa-eye"></i></button>
-                        <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
+                        <button onClick="location.href='modificar_usuarios.html'"><i class="fas fa-edit"></i></button>
                         <button><i class="fas fa-trash-alt"></i></button>
                     </td>
                 </tr>
-                <td> 9788489666153</td>
-                <!--table data-->
-                <td>Rayuela</td>
-                <td>Novela, Ficción especulativa</td>
-                <td>Pantheon Books</td>
-                <td>8500</td>
-                <td>Julio Cortázar</td>
-                <td><img src="../public/imgs/rayuela.jpeg"></td> 
-                <td>
-                    <button><i class="fas fa-eye"></i></button>
-                    <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
-                    <button><i class="fas fa-trash-alt"></i></button></td>
-
                 <tr>
-                    <td>9788446001188</td>
+                    <td>3101222222</td>
                     <!--table data-->
-                    <td>Mitos Nórdicos</td>
-                    <td>Mitología</td>
-                    <td>AKAL</td>
-                    <td>5600</td>
-                    <td>R.I. Page</td>
-                    <td><img src="../public/imgs/mitosNordicos.jpeg"></td>
+                    <td>Mark</td>
+                    <td>Elliot</td>
+                    <td>Zuckerberg</td>
+                    <td></td>
+                    <td>immazuckerberg@facebook.com</td>
+                    <td>14/05/1984</td>
+                    <td>34</td>
+                    <td>Hombre</td>
+
+                    <td><img class="imgUsuario" src="../public/imgs/usuarios/user_Mark_Zuckerberg.jpg"></td>
                     <td><button><i class="fas fa-eye"></i></button>
-                        <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
+                        <button onClick="location.href='modificar_usuarios.html'"><i class="fas fa-edit"></i></button>
                         <button><i class="fas fa-trash-alt"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3120123457789</td>
+                    <!--table data-->
+                    <td>Dua</td>
+                    <td></td>
+                    <td>Lipa</td>
+                    <td></td>
+                    <td>duabeefa@dualipa.com</td>
+                    <td>22/08/1995</td>
+                    <td>23</td>
+                    <td>Mujer</td>
+
+                    <td><img class="imgUsuario" src="../public/imgs/usuarios/user_Dua_Lipa.jpg"></td>
+                    <td><button><i class="fas fa-eye"></i></button>
+                        <button onClick="location.href='modificar_usuarios.html'"><i class="fas fa-edit"></i></button>
+                        <button><i class="fas fa-trash-alt"></i></button>
+                    </td>
                 </tr>
 
                 <tr>
-                        <td>9788446001188</td>
-                        <!--table data-->
-                        <td>El Misterioso Caso de Styles</td>
-                        <td>Novela detectivesca</td>
-                        <td>John Lane</td>
-                        <td>7000</td>
-                        <td> Agatha Christie </td>
-                        <td><img src="../public/imgs/casoStyles2.jpeg"></td>
-                        <td><button><i class="fas fa-eye"></i></button>
-                            <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
-                            <button><i class="fas fa-trash-alt"></i></button>
-                </tr>
-                <tr>
-                    <td>9781789090147</td>
+                    <td>312012345612</td>
                     <!--table data-->
-                    <td>God of War - The Official Novelization</td>
-                    <td>Mitología</td>
-                    <td>Titan Books</td>
-                    <td>12 700</td>
-                    <td>J. M. Barlog</td>
-                    <td><img src="../public/imgs/gow2.jpg"></td>
-                    <td><button><i class="fas fa-eye"></i></button>
-                        <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
-                        <button><i class="fas fa-trash-alt"></i></button>
-                </tr>
+                    <td>Ian</td>
+                    <td></td>
+                    <td>Khan</td>
+                    <td></td>
+                    <td>theFuturist@cnn.com</td>
 
-                <tr>
-                    <td>9781789090147</td>
-                    <!--table data-->
-                    <td>God of War</td>
-                    <td>Mitología</td>
-                    <td>Del Rey</td>
-                    <td>12 700</td>
-                    <td>Matthew Stover</td>
-                    <td><img src="../public/imgs/gow.jpg"></td>
+                    <td>18/03/1970</td>
+                    <td>42</td>
+                    <td>Hombre</td>
+
+                    <td><img class="imgUsuario" src="../public/imgs/usuarios/user_Ian_Khan.png"></td>
                     <td><button><i class="fas fa-eye"></i></button>
-                        <button onClick="location.href='modificar_libros.html'"><i class="fas fa-edit"></i></button>
+                        <button onClick="location.href='modificar_usuarios.html'"><i class="fas fa-edit"></i></button>
                         <button><i class="fas fa-trash-alt"></i></button>
+                    </td>
                 </tr>
 
 

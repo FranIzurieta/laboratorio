@@ -7,8 +7,6 @@
     <meta name="description" content="Pagina de listado de libros Bubo">
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/libros.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/sucursales.css" />
 
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -17,7 +15,9 @@
 
 <body>
     <header class="header_principal">
-        <img src="../public/imgs/CAFEBUBO2.png" alt="Logo de Bubo">
+            <a href="index.html">
+            <img src="../public/imgs/CAFEBUBO2.png" alt="Logo de Bubo">
+            </a>
         
         <nav class="navSuperior">
             <a href="">Cerrar Sesión</a>
@@ -29,45 +29,51 @@
     </header>
 
     <div id="menuLateral" class="navLateral">
+        <ul>
+            <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+               
+            <li><a href="clientes.html">Usuarios</a></li>
+               <ul>
+                   <li><a href="registro_usuarios.html">Registrar usuarios</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_usuarios.html">Modificar usuarios</a></li>
+               </ul>               
+            <li><a href="libros.html">Libros</a></li>
+               <ul>
+                   <li><a href="registro_libros.html">Registrar libros</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_libros.html">Modificar libros</a></li>
+               </ul>
+       
+            <li><a href="editoriales.html">Editoriales</a></li>    
             <ul>
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
-                   
-                               
-                <li><a href="libros.html">Libros</a></li>
-                   <ul>
-                       <li><a href="registro_libros.html">Registrar libros</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_libros.html">Modificar libros</a></li>
-                   </ul>
-           
-                <li><a href="editoriales.html">Editoriales</a></li>    
-                <ul>
-                       <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_libros.html">Modificar editoriales</a></li>
-                   </ul>
+                   <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_libros.html">Modificar editoriales</a></li>
+               </ul>
 
-                <li><a href="sucursales.html">Sucursales</a></li>
-                <ul>
-                       <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
-                   </ul>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <ul>
+                   <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+               </ul>
 
-                <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
 
-                <li><a href="comprobantes.html">Comprobantes</a></li>
-           </ul>
-        </div>
+            <li><a href="comprobantes.html">Comprobantes</a></li>
+       </ul>
+    </div>
 
     <h1>Libros</h1>
-    <h2>Lista de libros</h2>
+    <h3>Lista de libros</h3>
 <div class="contenedorConGrid">
     <div class="filtroSuperior">
-    <h2><input type="text"  id="filtrarLibros"  placeholder="Filtrar..."> </h2>
+    <h3><input type="text"  id="filtrarLibros"  placeholder="Filtrar..."> </h3>
 </div>
     <div class= "btnSuperior">
             <a href="registro_libros.html">

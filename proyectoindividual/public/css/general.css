@@ -12,10 +12,15 @@ h1{
     padding-bottom: 10px;
     margin-top: 0;
 }
+.filtroSuperior{
+    border-bottom: none;
+}
 h2{
     font-size: 30px;
     box-align: left;
-    margin-left: 120px;
+    margin-left: 20px;
+    padding-top: 30px;
+    border-bottom: 2px solid #222222;
 }
 
 #txtNav{
@@ -51,7 +56,7 @@ h2{
 }
 
 .navLateral {
-    height: 100%;
+    height: 90%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -64,18 +69,28 @@ h2{
 }
 
 .navLateral a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 6px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 16px;
+    color: #f8ecb7;
     display: block;
     transition: 0.3s;
 }
 
+.navLateral ul {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #e65e5e;
+    display: block;
+    transition: 0.3s;
+}
 .navLateral a:hover {
     color: #f1f1f1;
 }
 
+.navLateral ul:hover {
+    color: #e65e5e;
+}
 .navLateral .cerrarbtn {
     position: absolute;
     top: 0;
@@ -91,10 +106,15 @@ h2{
 
 /*Inicio: estilos de las tablas*/
 .tabla {
-     margin-left: 30px;
-    align-content: center;
-    
+    margin: 15px;
+    position: relative;;
+    width:98%;
+    border:3px solid rgb(7, 7, 7);
+    word-wrap: break-word;
+    overflow: hidden;
+    table-layout: fixed;
     }
+    
 .tabla thead{
     background: #596275;
     color: antiquewhite;
@@ -104,7 +124,7 @@ h2{
 
 .tabla th, .tabla td{
     text-align: center;
-    padding: 20px 25px 25px 25px;
+    padding: 10px 15px 15px 15px;
 }
 
 .tabla tbody tr:hover{
@@ -162,10 +182,15 @@ h2{
     width: 300px;
     height:400px;
 }
+
+.imgUsuario{
+    width: 80px;
+    height:90px;
+}
 .contenedorConGrid {
     display: grid;
-    padding: 100px;
-    width: 90%;
+    padding: 80px;
+    width: 95%;
   }
 .contenedorConGrid > div {
      font-size: 20px;
@@ -177,6 +202,16 @@ h2{
     width: 400px;
   }
 
+  .filtroSuperior, .btnSuperior{
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+ 
+  td img{
+    width: 128px;
+    height:  185px;  
+  }
 .btn{
         font-family: inherit;
         font-size: 12px;
@@ -197,10 +232,49 @@ h2{
     width: 200px;
     height: 100px;
 }
-    
+   
+
 .mapa {
 float: right;}
 
+
+
+#filtrarLibros {
+    background-image: url('../imgs/teabag.png');
+    background-size: 15%;
+    background-position: 2px 4px;
+    background-repeat: no-repeat;
+    width: 25%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    text-align: left;
+    
+  }
+  
+  #btnAgregar{
+      margin: 0 80px;
+      text-align: right;
+      float: right;
+      padding: none;
+      width: 140px;
+      height: 44px;
+      font-family : inherit;
+      font-size: 20px;
+      background-color:#b33939;
+      background-image: url("../imgs/kisspng-book-computer-icons-scalable-vector-graphics-bibli-icons-png-book-download-5ab02dd126acc2.7187615015214955051584.png");
+      background-size: 20%;
+      background-repeat: no-repeat;
+      background-position: 20px 8px;
+      color: #ffda79;
+      border-radius: 5px;
+      border: none;
+  }
+
+  #btnAgregar:hover{
+      background-color: rgb(238, 215, 82);
+      color:#222222;
+}
 .footer { 
     height: 100px;
     background:#b33939;

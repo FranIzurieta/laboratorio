@@ -7,7 +7,6 @@
     <meta name="description" content="Pagina de registro de editoriales Crux">
     <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_editoriales.css" />
     <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
@@ -27,39 +26,45 @@
     </header>
 
     <div id="menuLateral" class="navLateral">
+        <ul>
+            <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+               
+            <li><a href="clientes.html">Usuarios</a></li>
+               <ul>
+                   <li><a href="registro_usuarios.html">Registrar usuarios</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_usuarios.html">Modificar usuarios</a></li>
+               </ul>               
+            <li><a href="libros.html">Libros</a></li>
+               <ul>
+                   <li><a href="registro_libros.html">Registrar libros</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_libros.html">Modificar libros</a></li>
+               </ul>
+       
+            <li><a href="editoriales.html">Editoriales</a></li>    
             <ul>
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
-                   
-                               
-                <li><a href="libros.html">Libros</a></li>
-                   <ul>
-                       <li><a href="registro_libros.html">Registrar libros</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_libros.html">Modificar libros</a></li>
-                   </ul>
-           
-                <li><a href="editoriales.html">Editoriales</a></li>    
-                <ul>
-                       <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_editoriales.html">Modificar editoriales</a></li>
-                   </ul>
+                   <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_libros.html">Modificar editoriales</a></li>
+               </ul>
 
-                <li><a href="sucursales.html">Sucursales</a></li>
-                <ul>
-                       <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
-                   </ul>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <ul>
+                   <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+               </ul>
+               <ul>
+                   <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+               </ul>
 
-                <li><a href="reservas.html">Reservas</a></li>
-                
-                <li><a href="comprobantes.html">Comprobantes</a></li>
-           </ul>
-        </div>
+            <li><a href="reservas.html">Reservas</a></li>
+
+            <li><a href="comprobantes.html">Comprobantes</a></li>
+       </ul>
+    </div>
 
 
     <h1>Modificar Editoriales</h1>
@@ -321,7 +326,7 @@
                     <option value="Zimbabue" id="ZW">Zimbabue</option>
                 </select>
             </div>
-            <button class="btn_registrar"><span>Actualizar</span></button>
+            <button class="custom_button"><span>Actualizar</span></button>
         </form>
 
 

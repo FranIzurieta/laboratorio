@@ -34,7 +34,7 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 70%;
 }
 
 button:hover {
@@ -148,7 +148,7 @@ span.psw {
     
 }
 
-#nosotros h1{
+#nosotros h4{
     font-size: 54px;
     text-align: left;
     margin-top: 10px;
@@ -163,7 +163,7 @@ span.psw {
 
 }
 
-#nosotros h2{
+#nosotros h5{
     width: 600px;
     font-size: 40px;
     text-align: left;
