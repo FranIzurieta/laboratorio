@@ -7,10 +7,8 @@
     <meta name="description" content="Pagina de registro de clientes Crux">
     <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_jefe_sucursal.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_general.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_linea.css"/>
-   
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_linea.css" />
+
     <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
@@ -30,48 +28,54 @@
     </header>
 
     <div id="menuLateral" class="navLateral">
+        <ul>
+            <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+
+
+            <li><a href="libros.html">Libros</a></li>
             <ul>
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
-                   
-                               
-                <li><a href="libros.html">Libros</a></li>
-                   <ul>
-                       <li><a href="registro_libros.html">Registrar libros</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_libros.html">Modificar libros</a></li>
-                   </ul>
-           
-                <li><a href="editoriales.html">Editoriales</a></li>    
-                <ul>
-                       <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_editoriales.html">Modificar editoriales</a></li>
-                   </ul>
+                <li><a href="registro_libros.html">Registrar libros</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_libros.html">Modificar libros</a></li>
+            </ul>
 
-                <li><a href="sucursales.html">Sucursales</a></li>
-                <ul>
-                       <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
-                   </ul>
+            <li><a href="editoriales.html">Editoriales</a></li>
+            <ul>
+                <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_editoriales.html">Modificar editoriales</a></li>
+            </ul>
 
-                <li><a href="reservas.html">Reservas</a></li>
-                
-                <li><a href="../public/comprobantes.html">Comprobantes</a></li>
-           </ul>
-        </div>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <ul>
+                <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+            </ul>
+
+            <li><a href="reservas.html">Reservas</a></li>
+
+            <li><a href="../public/comprobantes.html">Comprobantes</a></li>
+        </ul>
+    </div>
+
+    <h1>Crear cuenta</h1>
+
+    <div id="seleccionCliente">
+            <button type="button" class="jefe_boton" onClick="location.href='registro_jefessucursal.html'">¿Sos jefe de
+                sucursal?</button>
+    </div>
 
 
-    <h1>Crear</h1>
     <h2>Datos del usuario</h2>
     <!-- <div class="contenedorConGrid">
         <div class="divFormIzquierdo">
             <form>
                 <div id="seleccionCliente">
-                    <button type="button" class="custom_button" onClick="location.href='registro_jefessucursal.html'">¿Sos jefe de
+                    <button type="button" class="main_button" onClick="location.href='registro_jefessucursal.html'">¿Sos jefe de
                         sucursal?</button>
                 </div>
                 <div>
@@ -118,9 +122,7 @@
                     </label>
                     <input type="password" id="confirmarContraseña">
                 </div>
-                <div>
-                    <button class="btn_registrar"><span>Registrar</span></button>
-                </div>
+                
             </form>
             </span>
             </p>
@@ -144,37 +146,85 @@
     
     
     </div> -->
+
+    <div class="divSubirImagen" >
+            <img src="../public/imgs/login-msg.png">
+            <form action="/action_page.php">
+                <div>
+                      <label for="files" class="btn">Haga click para subir la imagen. Sólo formato .png o .jpg</label>
+                      <input id="files" style="visibility:hidden;" type="file">
+                </div>
+            </form>
+    </div>
+
     
-    <fieldset class="Application">
-            <table>
-    
-                        <tr>
-                            <td>
-                                <table>
-                                    <tr><td>Identificación:</td> <td><input type="text" name="identity" size="10"/></td> </tr>
-                                    <tr><td>Primer nombre:</td> <td><input type="text" name="first_name" size="10" /></td></tr>
-                                    <tr><td>Segundo nombre:</td> <td><input type="text" name="second_name" size="10"/></td></tr> 	
-                                    <tr><td>Primer appelido:</td> <td><input type="text" name="first_lastname" size="10"></td></tr>
-                                    <tr><td>Segundo appelido:</td> <td><input type="text" name="second_lastname"  size="10"/></td></tr> 
-                                    <tr><td>Correo:</td> <td><input type="text" name="email"/></td></tr>
-                                </table>
-                            </td>
-                            <td>
-                                <table>
-                                    <tr><td>Fecha de nacimento:</td> <td><input type="text" name="date_of_birth" size="10"/></td> </tr>
-                                    <tr><td>Edad:</td> <td><input type="text" name="age" size="10" /></td></tr>	
-                                    <tr><td>Sexo:</td> <td><input type="radio" name="age" size="10" />Masculino</td><td><input type="radio" name="age" size="10" />Femenino</td></tr>
-                                    
-                                    <tr><td>Contraseña:</td> <td><input type="text" name="ownstreet" size="10"></td></tr>
-                                    <tr><td>Confirmación:</td> <td><input type="text" name="owncity"  size="10"/></td></tr> 
-                                </table>
-                            </td>
-                        </tr>
-                
-            </table>
-    </fieldset>
-    
-<script src="../public/js/controlador_menu.js"></script>
+
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>Identificación:</td>
+                        <td><input type="text" id="identidad" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td>Primer nombre:</td>
+                        <td><input type="text" id="primer_nombre" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td>Segundo nombre:</td>
+                        <td><input type="text" id="segundo_nombre" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td>Primer apellido:</td>
+                        <td><input type="text" id="primer_apellido" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Segundo apellido:</td>
+                        <td><input type="text" id="segundo_apellido" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td>Correo:</td>
+                        <td><input type="text" id="correo" /></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Fecha de nacimento:</td>
+                        <td><input type="text" id="fecha_nacimiento" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td>Edad:</td>
+                        <td><input type="text" id="edad" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td>Sexo:</td>
+                        <td><input type="radio" id="masculino" size="10" />Masculino</td>
+                        <td><input type="radio" id="femenino" size="10" />Femenino</td>
+                    </tr>
+
+                    <tr>
+                        <td>Contraseña:</td>
+                        <td><input type="text" id="contraseña" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Confirmación:</td>
+                        <td><input type="text" name="contraseña_confirmacion" size="10" /></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <button class="custom_button"><span>Registrar</span></button>
+    </div>
+
+
+
+    <script src="../public/js/controlador_menu.js"></script>
 
 </body>
 <div class="footer">
