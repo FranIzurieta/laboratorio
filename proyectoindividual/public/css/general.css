@@ -130,8 +130,7 @@ h2{
 .tabla tbody tr:hover{
     background-color: rgba(106, 176, 76,0.5);
 }
-/*Fin: estilos de las tablas*/
-/* Boton customizado*/
+
 .custom_button {
     display: block;
     border-radius: 4px;
@@ -289,4 +288,8 @@ float: right;}
 
 datalist { 
     display: none;
+}
+
+.errorInput{
+    border: 2px solid #eb4d4b;
 }
