@@ -49,6 +49,8 @@ function validar(pCodigo, pNombre) {
         inputNombre.classList.remove('errorInput');
     }
 
+
+    // Paises
     let texto = document.getElementById("lista"),
         element = document.getElementById("paises");
 
@@ -56,6 +58,7 @@ function validar(pCodigo, pNombre) {
         inputPais.classList.remove('errorInput');
     } else {
         inputPais.classList.add('errorInput');
+        error = true;
     }
 
     return error;

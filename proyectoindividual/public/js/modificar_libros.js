@@ -2,6 +2,8 @@ const botonRegistrar = document.querySelector('#boton_actualizar');
 const inputTitulo = document.querySelector('#titulolibro');
 const inputPrecio = document.querySelector('#precio');
 const inputAutor = document.querySelector('#autor');
+const inputCategorias = document.querySelector('#lista');
+const inputEditoriales = document.querySelector('#editorial_id');
 
 botonRegistrar.addEventListener('click', obtenerDatos);
 
@@ -56,6 +58,28 @@ function validar(pTitulo, pPrecio, pAutor) {
         error = true;
     } else {
         inputAutor.classList.remove('errorInput');
+    }
+
+    var text = document.getElementById("lista"),
+    element = document.getElementById("categorias");
+ 
+
+    if(element.querySelector("option[value='"+text.value+"']")){
+        inputCategorias.classList.remove('errorInput');
+    } else {
+        inputCategorias.classList.add('errorInput');
+    }
+
+
+
+    var textEditorial = document.getElementById("editorial_id"),
+    elementEditorial = document.getElementById("editoriales");
+ 
+
+    if(elementEditorial.querySelector("option[value='"+textEditorial.value+"']")){
+        inputEditoriales.classList.remove('errorInput');
+    } else {
+        inputEditoriales.classList.add('errorInput');
     }
 
     return error;
