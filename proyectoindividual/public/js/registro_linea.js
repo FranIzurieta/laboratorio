@@ -67,7 +67,7 @@ function contraseñasParejas(pContraseña, pConfirmacion) {
 
 function validar(pIdentidad, pPrimerNombre, pSegundoNombre, pPrimerApellido, pSegundoApellido, pEdad, pCorreo, pContraseña, pContraseñaConfirmacion) {
     let error = false;
-    let expNombre = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ ]+$/;
+    let expNombre = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ ´']+$/;
     let expCorreo = /^.+@.+\..+$/;
 
     inputEdad.min = 1;
@@ -90,12 +90,14 @@ function validar(pIdentidad, pPrimerNombre, pSegundoNombre, pPrimerApellido, pSe
     }
 
     // Segundo nombre
-    if (pSegundoNombre == '' || pSegundoNombre.length == 0 || expNombre.test(pSegundoNombre) == false) {
-        inputSegundoNombre.classList.add('errorInput');
+    if (pSegundoNombre.length != 0 && expNombre.test(pSegundoNombre) == false) {
         error = true;
+        inputSegundoNombre.classList.add('errorInput');
+
     } else {
         inputSegundoNombre.classList.remove('errorInput');
     }
+
 
     // Primer apellido
     if (pPrimerApellido == '' || pPrimerApellido.length == 0 || expNombre.test(pPrimerApellido) == false) {
@@ -105,13 +107,15 @@ function validar(pIdentidad, pPrimerNombre, pSegundoNombre, pPrimerApellido, pSe
         inputPrimerApellido.classList.remove('errorInput');
     }
 
-    // Segundo apellido
-    if (pSegundoApellido == '' || pSegundoApellido.length == 0 || expNombre.test(pSegundoApellido) == false) {
-        inputSegundoApellido.classList.add('errorInput');
+     // Segundo apellido
+     if (pSegundoApellido.length != 0 && expNombre.test(pSegundoApellido) == false) {
         error = true;
+        inputSegundoApellido.classList.add('errorInput');
+
     } else {
         inputSegundoApellido.classList.remove('errorInput');
     }
+
 
     // edad
     if (pEdad < inputEdad.min || pEdad > inputEdad.max) {

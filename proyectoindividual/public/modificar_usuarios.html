@@ -31,7 +31,13 @@
         <ul>
             <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
 
-
+            <li><a href="clientes.html">Usuarios</a></li>
+            <ul>
+                <li><a href="registro_usuarios.html">Registrar usuarios</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_usuarios.html">Modificar usuarios</a></li>
+            </ul>
             <li><a href="libros.html">Libros</a></li>
             <ul>
                 <li><a href="registro_libros.html">Registrar libros</a></li>
@@ -45,7 +51,7 @@
                 <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
             </ul>
             <ul>
-                <li><a href="modificar_editoriales.html">Modificar editoriales</a></li>
+                <li><a href="modificar_libros.html">Modificar editoriales</a></li>
             </ul>
 
             <li><a href="sucursales.html">Sucursales</a></li>
@@ -58,7 +64,7 @@
 
             <li><a href="reservas.html">Reservas</a></li>
 
-            <li><a href="../public/comprobantes.html">Comprobantes</a></li>
+            <li><a href="comprobantes.html">Comprobantes</a></li>
         </ul>
     </div>
 
@@ -87,7 +93,7 @@
             <td>
                 <table>
                     <tr>
-                        <td>¿Quién sos?</td>
+                        <td>¿Qué tipo de usuario?</td>
                         <td>
                             <select>
                                 <option value="jefe">Jefe de sucursal</option>
@@ -97,7 +103,7 @@
                     </tr>
                     <tr>
                         <td>Identificación:</td>
-                        <td><input type="text" id="identidad" size="10" disabled/></td>
+                        <td><input type="text" id="identidad" size="10" disabled /></td>
                     </tr>
                     <tr>
                         <td>Primer nombre:</td>
@@ -129,12 +135,12 @@
                     </tr>
                     <tr>
                         <td>Edad:</td>
-                        <td><input type="text" id="edad" size="10" disabled/></td>
+                        <td><input type="text" id="edad" size="10" disabled /></td>
                     </tr>
                     <tr>
                         <td>Sexo:</td>
-                            <td id="td_masculino"><input type="radio" id="masculino" name="sexo_radio" size="10" />Masculino</td>
-                            <td id="td_femenino"><input type="radio" id="femenino" name="sexo_radio" size="10" />Femenino</td>
+                        <td id="td_masculino"><input type="radio" id="masculino" name="sexo_radio" size="10" />Masculino</td>
+                        <td id="td_femenino"><input type="radio" id="femenino" name="sexo_radio" size="10" />Femenino</td>
                     </tr>
                     <tr>
                         <td>Contraseña:</td>
@@ -148,13 +154,15 @@
             </td>
         </tr>
     </table>
-    
+
     <div>
         <button class="custom_button" id="botonRegistrar"><span>Actualizar</span></button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
-    <script src="../public/js/controlador_registro_usuarios.js"></script>
+    <script src="../public/js/registro_usuarios.js"></script>
+    <script src="../public/js/controlador_menu.js"></script>
+
 
 </body>
 <div class="footer">

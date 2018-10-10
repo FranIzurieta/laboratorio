@@ -126,7 +126,10 @@ h2{
     text-align: center;
     padding: 10px 15px 15px 15px;
 }
+.tabla td{
 
+    size:"10";  
+}
 .tabla tbody tr:hover{
     background-color: rgba(106, 176, 76,0.5);
 }
