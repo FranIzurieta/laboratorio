@@ -2,35 +2,35 @@
     box-sizing: border-box;
 }
 
-.card1{
-    background-color:#aaa;
-}
 
-.card2{
-    background-color:#bbb;
-}
-
-.card3{
-        background-color:#ccc;
-    }
-
-.card4{
-        background-color:#ddd;
-}
-
-/* Crea 4 columnas que flotan una a la par de la otra */
-.card1, .card2, .card3, .card4 {
+/* Crea 4 cards que flotan una a la par de la otra */
+.card > div {
     float: left;
     width: 25%;
     padding: 10px;
     height: 365px; 
 }
 
-/* Clear floats after the columns */
+/* limpiar los floats luego de las cards */
 .card:after {
     content: "";
     display: table;
     clear: both;
+}
+#card1{
+    background-color:#aaa;
+}
+
+#card2{
+    background-color:#bbb;
+}
+
+#card3{
+        background-color:#ccc;
+    }
+
+#card4{
+        background-color:#ddd;
 }
 
 .book {
