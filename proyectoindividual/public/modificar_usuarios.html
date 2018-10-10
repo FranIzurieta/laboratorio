@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Crux-Modificación de Clientes</title>
+    <meta name="description" content="Pagina de modificacion de clientes Crux">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header_principal">
+        <img src="../public/imgs/CAFEBUBO2.png" alt="Logo de Crux">
+
+        <nav class="navSuperior">
+            <a href="">Cerrar Sesión</a>
+            <span id="txtNav" style="cursor:pointer" onclick="abrirNav()">&#9776;Menú</span>
+        </nav>
+    </header>
+
+    <div id="menuLateral" class="navLateral">
+        <ul>
+            <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+
+
+            <li><a href="libros.html">Libros</a></li>
+            <ul>
+                <li><a href="registro_libros.html">Registrar libros</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_libros.html">Modificar libros</a></li>
+            </ul>
+
+            <li><a href="editoriales.html">Editoriales</a></li>
+            <ul>
+                <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_editoriales.html">Modificar editoriales</a></li>
+            </ul>
+
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <ul>
+                <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+            </ul>
+
+            <li><a href="reservas.html">Reservas</a></li>
+
+            <li><a href="../public/comprobantes.html">Comprobantes</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <h1>Modificar cuenta</h1>
+
+
+
+
+    <h2>Datos del usuario</h2>
+    <div class="divSubirImagen">
+        <img src="../public/imgs/login-msg.png">
+        <form action="/action_page.php">
+            <div>
+                  <label for="files" class="btn">Haga click para subir la imagen. Sólo formato .png o .jpg</label>
+                  <input id="files" style="visibility:hidden;" type="file">
+            </div>
+        </form>
+    </div>
+
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>¿Quién sos?</td>
+                        <td>
+                            <select>
+                                <option value="jefe">Jefe de sucursal</option>
+                                <option value="usuario">Usuario</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Identificación:</td>
+                        <td><input type="text" id="identidad" size="10" disabled/></td>
+                    </tr>
+                    <tr>
+                        <td>Primer nombre:</td>
+                        <td><input type="text" id="primer_nombre" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td>Segundo nombre:</td>
+                        <td><input type="text" id="segundo_nombre" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td>Primer apellido:</td>
+                        <td><input type="text" id="primer_apellido" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Segundo apellido:</td>
+                        <td><input type="text" id="segundo_apellido" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td>Correo:</td>
+                        <td><input type="text" id="correo" /></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>Fecha de nacimento:</td>
+                        <td><input type="date" id="fecha_nacimiento" size="10" /></td>
+                    </tr>
+                    <tr>
+                        <td>Edad:</td>
+                        <td><input type="text" id="edad" size="10" disabled/></td>
+                    </tr>
+                    <tr>
+                        <td>Sexo:</td>
+                            <td id="td_masculino"><input type="radio" id="masculino" name="sexo_radio" size="10" />Masculino</td>
+                            <td id="td_femenino"><input type="radio" id="femenino" name="sexo_radio" size="10" />Femenino</td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña:</td>
+                        <td><input type="password" id="contraseña" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Confirmación:</td>
+                        <td><input type="password" id="contraseña_confirmacion" size="10" /></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    
+    <div>
+        <button class="custom_button" id="botonRegistrar"><span>Actualizar</span></button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="../public/js/controlador_registro_usuarios.js"></script>
+
+</body>
+<div class="footer">
+    <p>Crux BiblioCafé</p>
+</div>
+
+</html>

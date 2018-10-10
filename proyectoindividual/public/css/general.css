@@ -194,7 +194,7 @@ h2{
 .contenedorConGrid > div {
      font-size: 20px;
      }
-.divFormIzquierdo, .divSubirImagen, .mapa{
+.form, .divSubirImagen, .mapa{
     grid-row-start: 1;
     grid-row-end: 2;
 
@@ -227,7 +227,7 @@ h2{
         opacity: 0.8;
     }
 
-.divFormIzquierdo #direccionSucursal{
+.form #direccionSucursal{
     width: 200px;
     height: 100px;
 }
