@@ -7,8 +7,6 @@
     <meta name="description" content="Pagina de registro de clientes Crux">
     <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_libros.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_jefe_sucursal.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -67,15 +65,8 @@
     <h1>Modificar usuario</h1>
     <h2>Datos del usuario</h2>
     <div class="contenedorConGrid">
-        <div class="divFormIzquierdo">
-            <form>
-
-                <div id="seleccionCliente">
-                    <button class="btn_registrar"><span><a href="../public/registro_jefessucursal.html">¿Sos jefe de
-                                sucursal?</a>
-                        </span></button>
-
-                </div>
+        <div class="form">
+            <form>      
                 <div>
                     <label id="cédula">Cédula*</label>
                     <input type="text" id="cédula" disabled>
@@ -117,13 +108,11 @@
                     </label>
                     <input type="password" id="confirmarContraseña">
                 </div>
-                <div>
-                    <button class="btn_registrar"><span>Actualizar</span></button>
-                </div>
+                
             </form>
-            </span>
-            </p>
-
+            <div>
+                <button class="custom_button"><span>Actualizar</span></button>
+            </div>
         </div>
         <div class="divSubirImagen">
             <img src="../public/imgs/login-msg.png">
