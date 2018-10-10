@@ -132,10 +132,10 @@ function validar(pIdentidad, pPrimerNombre, pSegundoNombre, pPrimerApellido, pSe
     // sexo
     var radioButtons = document.getElementsByName("sexo_radio");
     if (radiosVacios(radioButtons)) {
-        document.querySelector('#td_maculino').classList.add('errorInput');
+        document.querySelector('#td_masculino').classList.add('errorInput');
         document.querySelector('#td_femenino').classList.add('errorInput');
     } else {
-        document.querySelector('#td_maculino').classList.remove('errorInput');
+        document.querySelector('#td_masculino').classList.remove('errorInput');
         document.querySelector('#td_femenino').classList.remove('errorInput');
     }
 

@@ -1,5 +1,3 @@
-
-
 const botonRegistrar = document.querySelector('#botonRegistrar');
 const inputIdentificacion = document.querySelector('#identidad');
 const inputPrimerNombre = document.querySelector('#primer_nombre');
@@ -11,6 +9,8 @@ const inputEdad = document.querySelector('#edad');
 const inputCorreo = document.querySelector('#correo');
 const inputRadioMasculino = document.querySelector('#masculino');
 const inputRadioFemenino = document.querySelector('#femenino');
+const inputContraseña = document.querySelector('#contraseña');
+const inputContraseñaConfirmacion = document.querySelector('#contraseña_confirmacion');
 
 
 botonRegistrar.addEventListener('click', obtenerDatos);
@@ -25,15 +25,27 @@ function obtenerDatos() {
     let segundoApellido = inputSegundoApellido.value;
     let edad = inputEdad.value;
     let correo = inputCorreo.value;
+    let contraseña = inputContraseña.value;
+    let contraseñaConfirmacion = inputContraseñaConfirmacion.value;
 
-    let estadoError = validar(identidad, primerNombre, segundoNombre, primerApellido, segundoApellido, edad, correo);
+    let estadoError = validar(identidad, primerNombre, segundoNombre, primerApellido, segundoApellido, edad, correo, contraseña, contraseñaConfirmacion);
 
     if (estadoError == false) {
-        swal({
-            type: 'success',
-            title: 'Mensaje enviado',
-            text: 'Le responderemos tan pronto como sea posible'
-        });
+
+        if (contraseñasParejas(contraseña, contraseñaConfirmacion)){
+            swal({
+                type: 'success',
+                title: 'Mensaje enviado',
+                text: 'Le responderemos tan pronto como sea posible'
+            });    
+        } else{
+            
+            swal({
+                type: 'warning',
+                title: 'Datos incorrectos',
+                text: 'Sus contraseñas no son parejas!'
+            });    
+        }
     } else {
         swal({
             type: 'warning',
@@ -44,7 +56,16 @@ function obtenerDatos() {
 
 };
 
-function validar(pIdentidad, pPrimerNombre, pSegundoNombre, pPrimerApellido, pSegundoApellido, pEdad, pCorreo) {
+function contraseñasParejas(pContraseña, pConfirmacion) {
+    let parejas = false;
+    if(pContraseña == pConfirmacion){
+        parejas = true;
+    }
+
+    return parejas;
+}
+
+function validar(pIdentidad, pPrimerNombre, pSegundoNombre, pPrimerApellido, pSegundoApellido, pEdad, pCorreo, pContraseña, pContraseñaConfirmacion) {
     let error = false;
     let expNombre = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ ]+$/;
     let expCorreo = /^.+@.+\..+$/;
@@ -110,11 +131,27 @@ function validar(pIdentidad, pPrimerNombre, pSegundoNombre, pPrimerApellido, pSe
 
     // sexo
     var radioButtons = document.getElementsByName("sexo_radio");
-
     if (radiosVacios(radioButtons)) {
-        document.querySelector('#td_sexo').classList.add('errorInput');
+        document.querySelector('#td_masculino').classList.add('errorInput');
+        document.querySelector('#td_femenino').classList.add('errorInput');
     } else {
-        document.querySelector('#td_sexo').classList.remove('errorInput');
+        document.querySelector('#td_masculino').classList.remove('errorInput');
+        document.querySelector('#td_femenino').classList.remove('errorInput');
+    }
+
+    // contraseña
+    if (pContraseña == '' || pContraseña.length == 0) {
+        inputContraseña.classList.add('errorInput');
+        error = true;
+    } else {
+        inputContraseña.classList.remove('errorInput');
+    }
+
+    // contraseña confirmacion
+    if (!contraseñasParejas(pContraseña, pContraseñaConfirmacion)){
+        inputContraseñaConfirmacion.classList.add('errorInput');
+    } else {
+        inputContraseñaConfirmacion.classList.remove('errorInput');
     }
 
     return error;
