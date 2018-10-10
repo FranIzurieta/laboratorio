@@ -74,17 +74,17 @@
     <div class="form">
         <form>
             <div>
-                <label id="codigoEditorial">Código</label>
-                <input type="text" id="codigoEditorial" disabled>
+                <label>Código</label>
+                <input type="text" id="codigoEditorial" disabled value="1234">
             </div>
             <div>
-                <label id="nombreEditorial">Nombre</label>
+                <label>Nombre</label>
                 <input type="text" id="nombreEditorial">
             </div>
             <div>
                 <label for="pais">País</label>
-                <input list= "pais">
-                <datalist id="pais">
+                <input id="lista" name="pais" list="paises">
+                <datalist id="paises">
                     <option value="Elegir" id="AF">Elija el país de origen</option>
                     <option value="Afganistán" id="AF">Afganistán</option>
                     <option value="Albania" id="AL">Albania</option>
@@ -325,16 +325,15 @@
                     <option value="Yemen" id="YE">Yemen</option>
                     <option value="Zambia" id="ZM">Zambia</option>
                     <option value="Zimbabue" id="ZW">Zimbabue</option>
-                </select>
+                </datalist>
             </div>
-            <button class="custom_button"><span>Actualizar</span></button>
         </form>
-
-
+    <button class="custom_button" id="boton_actualizar"><span>Actualizar</span></button>
+        
     </div>
-
-    <script src="../public/js/controlador_menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
     <script src="../public/js/modificar_editoriales.js"></script>
+    <script src="../public/js/controlador_menu.js"></script>
 
 </body>
 <div class="footer">
