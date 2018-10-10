@@ -67,17 +67,17 @@
         <div class="form">
         <form>
             <div>
-                <label id="codigoEditorial">Código</label>
-                <input type="text" id="codigoEditorial">
+                <label>Código</label>
+                <input type="number" id="codigoEditorial">
             </div>
             <div>
-                <label id="nombreEditorial">Nombre</label>
+                <label>Nombre</label>
                 <input type="text" id="nombreEditorial">
             </div>
             <div>
                 <label for="pais">País</label>
-                <input list= "pais">
-                <datalist id="pais">
+                <input id="lista" name="pais" list="paises">
+                <datalist id="paises">
                     <option value="Elegir" id="AF">Elija el país de origen</option>
                     <option value="Afganistán" id="AF">Afganistán</option>
                     <option value="Albania" id="AL">Albania</option>
@@ -322,12 +322,13 @@
             </div>
         </form>
         <div>
-        <button class="custom_button"><span>Registrar</span></button>
+        <button id="boton_registrar" class="custom_button"><span>Registrar</span></button>
 
     </div>
         </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="../public/js/registro_editoriales.js"></script>
     <script src="../public/js/controlador_menu.js"></script>
 
 </body>
