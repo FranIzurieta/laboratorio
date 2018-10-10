@@ -79,41 +79,39 @@
                 </div>
                 <div>
                     <label for="categorialibro">Categoría</label>
-                    <input list= "categorialibro">
-                    <datalist id="categorialibro">
-                    
-                        <option value="Mitología    "></option>
-                        <option value="Realismo mágico"></option>
-                        <option value="Ficción especulativa"></option>
-                        <option value="Policial (o Thriller)"></option>
-                        <option value="Romántica"></option>
-                        <option value="Aventura"></option>
-                        <option value="Terror"></option>
-                        <option value="Ficción / Realidad"></option>
-                        <option value="Ciencia Ficción"></option>
-                        <option value="Investigación"></option>
-                        <option value="Biográfica"></option>
-                        <option value="Infantil"></option>
-                        <option value="Autoayuda"></option>
-                        <option value="Erótica"></option>
-                        <option value="Hogar"></option>
-                        <option value="Enciclopedia / Manual"></option>
-                        <option value="Política"></option>
-                        <option value="Economía / Marketing"></option>
-                        <option value="Sociedad"></option>
-                        <option value="Deportes"></option>
-                        <option value="Viajes / Cultura"></option>
-                        <option value="Otros temas / Varios"></option>
-                    </datalist>
+                    <select id="categorialibro">
+                        <option>Mitología</option>
+                        <option>Realismo mágico</option>
+                        <option>Ficción especulativa</option>
+                        <option>Policial (o Thriller)</option>
+                        <option>Romántica</option>
+                        <option>Aventura</option>
+                        <option>Terror</option>
+                        <option>Ficción / Realidad</option>
+                        <option>Ciencia Ficción</option>
+                        <option>Investigación</option>
+                        <option>Biográfica</option>
+                        <option>Infantil</option>
+                        <option>Autoayuda</option>
+                        <option>Erótica</option>
+                        <option>Hogar</option>
+                        <option>Enciclopedia / Manual</option>
+                        <option>Política</option>
+                        <option>Economía / Marketing</option>
+                        <option>Sociedad</option>
+                        <option>Deportes</option>
+                        <option>Viajes / Cultura</option>
+                        <option>Otros temas / Varios</option>
+                    </select>
                 </div>
                 <div>
                     <label id="editorial">Editorial</label>
                     <select id="editorial">
-                        <option value="editorial1">AKAL</option>
-                        <option value="editorial2">Pantheon Books</option>
-                        <option value="editorial3">John Lane</option>
-                        <option value="editorial4">Harper</option>
-                        <option value="editorial5">Titan Books</option>
+                        <option>AKAL</option>
+                        <option>Pantheon Books</option>
+                        <option>John Lane</option>
+                        <option>Harper</option>
+                        <option>Titan Books</option>
 
                     </select>
         
@@ -146,9 +144,11 @@
        
 
     </div>
-    <div><button class="custom_button"><span>Actualizar</span></button>
+    <div><button class="custom_button" id="boton_actualizar"><span>Actualizar</span></button>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="../public/js/modificar_libros.js"></script>
     <script src="../public/js/controlador_menu.js"></script>
 
 </body>
