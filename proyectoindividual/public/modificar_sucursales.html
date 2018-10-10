@@ -1,112 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Modificar Sucurslaes</title>
-        <meta name="description" content="Pagina Modificar Sucursales">
-        <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_general.css" />
-        <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <title>Modificar Sucurslaes</title>
+    <meta name="description" content="Pagina Modificar Sucursales">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/general.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/registro_general.css" />
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
 
-    <body>
-        <header class="header_principal">
-             <img src="../public/imgs/CAFEBUBO2.png" alt="Logo de Bubo">
+<body>
+    <header class="header_principal">
+        <img src="../public/imgs/CAFEBUBO2.png" alt="Logo de Bubo">
 
-             <nav class="navSuperior">
-             <a href="">Cerrar Sesión</a>
+        <nav class="navSuperior">
+            <a href="">Cerrar Sesión</a>
             <span id="txtNav" style="cursor:pointer" onclick="abrirNav()">&#9776;Menú</span>
-             </nav>
-        </header>
+        </nav>
+    </header>
 
-        <div id="menuLateral" class="navLateral">
+    <div id="menuLateral" class="navLateral">
+        <ul>
+            <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+
+            <li><a href="clientes.html">Usuarios</a></li>
             <ul>
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
-                   
-                <li><a href="clientes.html">Usuarios</a></li>
-                   <ul>
-                       <li><a href="registro_usuarios.html">Registrar usuarios</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_usuarios.html">Modificar usuarios</a></li>
-                   </ul>               
-                <li><a href="libros.html">Libros</a></li>
-                   <ul>
-                       <li><a href="registro_libros.html">Registrar libros</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_libros.html">Modificar libros</a></li>
-                   </ul>
-           
-                <li><a href="editoriales.html">Editoriales</a></li>    
-                <ul>
-                       <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_libros.html">Modificar editoriales</a></li>
-                   </ul>
-    
-                <li><a href="sucursales.html">Sucursales</a></li>
-                <ul>
-                       <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
-                   </ul>
-    
-                <li><a href="reservas.html">Reservas</a></li>
-    
-                <li><a href="comprobantes.html">Comprobantes</a></li>
-           </ul>
-        </div>
-     
-        <h1>Modificar Sucursales</h1>
-        <div class="contenedorConGrid">
-            <div class="form">
-                <form>
-                    <div>
-                        <label id="codigoEditorial">Código</label>
-                        <input type="text" disabled value="001" id="codigoEditorial">
-                    </div>
-                    <div>
-                        <label id="nombreSucursal">Nombre de la sucursal</label>
-                        <input type="text" id="nombreSucursal" value ="Escazú">
-                    </div>
-                    <div>
-                       <label id="numerotel">Teléfono</label>
-                       <input type="tel" id="numerotel" value="22928801">
-                    </div>
-   
-                    <div>
-                        <label id="direccionSucursal">Dirección exacta</label>
-                        <textarea id="direccionSucursal" rows="5" cols="10">100 mts. del AMPM, Escalante</textarea>
-                    </div> 
-                </form>
-   
-           </div>
-               
-            <div class="mapa">
-                
-       
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0197106831365!2d-84.03322258433295!3d9.932316192897579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8!2sCenfotec!5e0!3m2!1ses-419!2scr!4v1537201381843" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-       
-                
-            </div>
-       </div>
-       <div>
-                 <button class="custom_button" type="button"><span>Actualizar</span></button>
-        </div>
-        <script src="../public/js/controlador_menu.js"></script>
-    
-    </body>
-    
+                <li><a href="registro_usuarios.html">Registrar usuarios</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_usuarios.html">Modificar usuarios</a></li>
+            </ul>
+            <li><a href="libros.html">Libros</a></li>
+            <ul>
+                <li><a href="registro_libros.html">Registrar libros</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_libros.html">Modificar libros</a></li>
+            </ul>
 
-    <div class="footer">
-        <p>Crux BiblioCafé</p>
+            <li><a href="editoriales.html">Editoriales</a></li>
+            <ul>
+                <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_libros.html">Modificar editoriales</a></li>
+            </ul>
+
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <ul>
+                <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+            </ul>
+
+            <li><a href="reservas.html">Reservas</a></li>
+
+            <li><a href="comprobantes.html">Comprobantes</a></li>
+        </ul>
     </div>
-    
- </html>
+
+    <h1>Modificar Sucursales</h1>
+    <div class="contenedorConGrid">
+        <div class="form">
+            <form>
+                <div>
+                    <label>Código</label>
+                    <input type="text" disabled value="001" id="codigoEditorial">
+                </div>
+                <div>
+                    <label>Nombre de la sucursal</label>
+                    <input type="text" id="nombreSucursal" value="Escazú">
+                </div>
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" id="numero" value="22928801">
+                </div>
+                <div>
+                    <label>Dirección exacta</label>
+                    <textarea id="direccionSucursal" rows="5" cols="10">100 mts. del AMPM, Escalante</textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.0197106831365!2d-84.03322258433295!3d9.932316192897579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e3f13462cc7b%3A0x97219232a6ee2da8!2sCenfotec!5e0!3m2!1ses-419!2scr!4v1537201381843"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    <div>
+        <button id="boton_actualizar" class="custom_button" type="button"><span>Actualizar</span></button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="../public/js/modificar_sucursales.js"></script>
+    <script src="../public/js/controlador_menu.js"></script>
+
+</body>
+
+
+<div class="footer">
+    <p>Crux BiblioCafé</p>
+</div>
+
+</html>
