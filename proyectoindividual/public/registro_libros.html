@@ -29,39 +29,39 @@
     </header>
 
     <div id="menuLateral" class="navLateral">
+        <ul>
+            <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
+
+
+            <li><a href="libros.html">Libros</a></li>
             <ul>
-                <a href="javascript:void(0)" class="cerrarbtn" onclick="cerrarNav()">&times;</a>
-                   
-                               
-                <li><a href="libros.html">Libros</a></li>
-                   <ul>
-                       <li><a href="registro_libros.html">Registrar libros</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_libros.html">Modificar libros</a></li>
-                   </ul>
-           
-                <li><a href="editoriales.html">Editoriales</a></li>    
-                <ul>
-                       <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_editoriales.html">Modificar editoriales</a></li>
-                   </ul>
+                <li><a href="registro_libros.html">Registrar libros</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_libros.html">Modificar libros</a></li>
+            </ul>
 
-                <li><a href="sucursales.html">Sucursales</a></li>
-                <ul>
-                       <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
-                   </ul>
-                   <ul>
-                       <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
-                   </ul>
+            <li><a href="editoriales.html">Editoriales</a></li>
+            <ul>
+                <li><a href="registro_editoriales.html">Registrar editoriales</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_editoriales.html">Modificar editoriales</a></li>
+            </ul>
 
-                <li><a href="reservas.html">Reservas</a></li>
-                
-                <li><a href="comprobantes.html">Comprobantes</a></li>
-           </ul>
-        </div>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <ul>
+                <li><a href="registro_sucursales.html">Registrar sucursales</a></li>
+            </ul>
+            <ul>
+                <li><a href="modificar_sucursales.html">Modificar sucursales</a></li>
+            </ul>
+
+            <li><a href="reservas.html">Reservas</a></li>
+
+            <li><a href="comprobantes.html">Comprobantes</a></li>
+        </ul>
+    </div>
 
 
     <h1>Registro de libros</h1>
@@ -71,7 +71,7 @@
             <form>
                 <div>
                     <label for="isbn">ISBN</label>
-                    <input type="text" id="isbn">
+                    <input type="number" id="isbn">
                 </div>
                 <div>
                     <label for="titulolibro">Título</label>
@@ -79,76 +79,71 @@
                 </div>
                 <div>
                     <label for="categorialibro">Categoría</label>
-                    <input list= "categorialibro">
-                    <datalist id="categorialibro">
-                    
-                        <option value="Mitología    "></option>
-                        <option value="Realismo mágico"></option>
-                        <option value="Ficción especulativa"></option>
-                        <option value="Policial (o Thriller)"></option>
-                        <option value="Romántica"></option>
-                        <option value="Aventura"></option>
-                        <option value="Terror"></option>
-                        <option value="Ficción / Realidad"></option>
-                        <option value="Ciencia Ficción"></option>
-                        <option value="Investigación"></option>
-                        <option value="Biográfica"></option>
-                        <option value="Infantil"></option>
-                        <option value="Autoayuda"></option>
-                        <option value="Erótica"></option>
-                        <option value="Hogar"></option>
-                        <option value="Enciclopedia / Manual"></option>
-                        <option value="Política"></option>
-                        <option value="Economía / Marketing"></option>
-                        <option value="Sociedad"></option>
-                        <option value="Deportes"></option>
-                        <option value="Viajes / Cultura"></option>
-                        <option value="Otros temas / Varios"></option>
-                    </datalist>
+                    <select id="categorialibro">
+                        <option>Mitología</option>
+                        <option>Realismo mágico</option>
+                        <option>Ficción especulativa</option>
+                        <option>Policial (o Thriller)</option>
+                        <option>Romántica</option>
+                        <option>Aventura</option>
+                        <option>Terror</option>
+                        <option>Ficción / Realida</option>
+                        <option>Ciencia Ficción</option>
+                        <option>Investigación</option>
+                        <option>Biográfica</option>
+                        <option>Infantil</option>
+                        <option>Autoayud</option>
+                        <option>Erótica</option>
+                        <option>Hoga</option>
+                        <option>Enciclopedia / Manual</option>
+                        <option>Política</option>
+                        <option>Economía / Marketing</option>
+                        <option>Sociedad</option>
+                        <option>Deportes</option>
+                        <option>Viajes / Cultura</option>
+                        <option>Otros temas / Varios</option>
+                    </select>
                 </div>
                 <div>
                     <label id="editorial">Editorial</label>
                     <select id="editorial">
-                        <option value="editorial1">AKAL</option>
-                        <option value="editorial2">Pantheon Books</option>
-                        <option value="editorial3">John Lane</option>
-                        <option value="editorial4">Harper</option>
-                        <option value="editorial5">Titan Books</option>
-
+                        <option>AKAL</option>
+                        <option>Pantheon Books</option>
+                        <option>John Lane</option>
+                        <option>Harper</option>
+                        <option>Titan Books</option>
                     </select>
-        
                 </div>
                 <div>
-                        <label for="precio">Precio</label>
-                        <input type="number" id="precio" min="1" step="any" />
+                    <label for="precio">Precio</label>
+                    <input type="number" id="precio" min="1" step="any" />
                 </div>
                 <div>
-                            <label for="autor">Autor</label>
-                            <input type="text" id="autor">
+                    <label for="autor">Autor</label>
+                    <input type="text" id="autor">
+                </div>
+            </form>
+        </div>
+        <div class="divSubirImagen">
+            <img src="../public/imgs/kisspng-book-cattle-leather-ancient-cow-leather-book-5a6db103b4ba03.4733959315171381797403.png">
+            <form action="/action_page.php">
+
+                <div>
+                    <label for="files" class="btn">Haga click aquí para subir la imagen. Sólo formato .png o .jpg</label>
+                    <input id="files" style="visibility:hidden;" type="file">
                 </div>
 
             </form>
 
-
         </div>
-        <div class="divSubirImagen">
-                <img src="../public/imgs/kisspng-book-cattle-leather-ancient-cow-leather-book-5a6db103b4ba03.4733959315171381797403.png">
-                  <form action="/action_page.php">
-    
-                    <div>
-                         <label for="files" class="btn">Haga click aquí para subir la imagen. Sólo formato .png o .jpg</label>
-                         <input id="files" style="visibility:hidden;" type="file">
-                    </div>
-    
-                </form>
-    
-            </div>
-       
+
 
     </div>
-    <div><button class="custom_button"><span>Registrar</span></button>
+    <div><button class="custom_button" id="boton_registrar"><span>Registrar</span></button>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="../public/js/registro_libros.js"></script>
     <script src="../public/js/controlador_menu.js"></script>
 
 </body>
