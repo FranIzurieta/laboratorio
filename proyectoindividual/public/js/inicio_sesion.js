@@ -12,21 +12,16 @@ function obtenerDatos() {
     let estadoError = validar(usuario, contraseña);
 
     if (estadoError == false) {
+        swal({ 
+            title: "Hoot-hoot!",
+            text: "Datos Correctos",
+            type: "success"}).then(okay => {
+   if (okay) {
+    window.location = "reservas.html";
+  }
+});
 
-        if (contraseñasParejas(contraseña, contraseñaConfirmacion)){
-            swal({
-                type: 'success',
-                title: 'Mensaje enviado',
-                text: 'Le responderemos tan pronto como sea posible'
-            });    
-        } else{
-            
-            swal({
-                type: 'warning',
-                title: 'Datos incorrectos',
-                text: 'Sus contraseñas no son parejas!'
-            });    
-        }
+        
     } else {
         swal({
             type: 'warning',
@@ -35,4 +30,26 @@ function obtenerDatos() {
         });
     }
 
+};
+function validar(pIdentidad, pContraseña) {
+    let error = false;
+    let expCorreo = /^.+@.+\..+$/;
+
+    // Identidad
+    if (pIdentidad == '' || pIdentidad.length == 0) {
+        inputIdentificacion.classList.add('errorInput');
+        error = true;
+    } else {
+        inputIdentificacion.classList.remove('errorInput');
+    }
+
+    // contraseña
+    if (pContraseña == '' || pContraseña.length == 0) {
+        inputContraseña.classList.add('errorInput');
+        error = true;
+    } else {
+        inputContraseña.classList.remove('errorInput');
+    }
+
+    return error;
 };
