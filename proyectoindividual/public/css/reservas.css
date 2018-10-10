@@ -2,9 +2,24 @@
     box-sizing: border-box;
 }
 
+.card1{
+    background-color:#aaa;
+}
+
+.card2{
+    background-color:#bbb;
+}
+
+.card3{
+        background-color:#ccc;
+    }
+
+.card4{
+        background-color:#ddd;
+}
 
 /* Crea 4 columnas que flotan una a la par de la otra */
-.column {
+.card1, .card2, .card3, .card4 {
     float: left;
     width: 25%;
     padding: 10px;
@@ -12,7 +27,7 @@
 }
 
 /* Clear floats after the columns */
-.row:after {
+.card:after {
     content: "";
     display: table;
     clear: both;

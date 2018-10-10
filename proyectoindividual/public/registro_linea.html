@@ -149,16 +149,16 @@
                 <table>
                     <tr>
                         <td>Fecha de nacimento:</td>
-                        <td><input type="text" id="fecha_nacimiento" size="10" /></td>
+                        <td><input type="date" id="fecha_nacimiento" size="10" /></td>
                     </tr>
                     <tr>
                         <td>Edad:</td>
                         <td><input type="text" id="edad" size="10" /></td>
                     </tr>
                     <tr>
-                        <td>Sexo:</td>
-                        <td><input type="radio" id="masculino" size="10" />Masculino</td>
-                        <td><input type="radio" id="femenino" size="10" />Femenino</td>
+                        <td >Sexo:</td>
+                        <td id="td_sexo"><input  type="radio" id="masculino" size="10" name="sexo_radio"/>Masculino</td>
+                        <td id="td_sexo"><input type="radio" id="femenino" size="10" name="sexo_radio" />Femenino</td>
                     </tr>
 
                     <tr>
@@ -166,7 +166,7 @@
                         <td><input type="text" id="contraseña" size="10" onkeypress="checkPass()" required class="form-control"></td>
                     </tr>
                     <tr>
-                        <td>Confirmación:</td>
+                        <td>Confirmación:</td>  
                         <td><input type="text" id="contraseña_confirmacion" size="10" onkeypress="checkPass()" required class="form-control"/></td>
                     </tr>
                     
@@ -176,13 +176,14 @@
     </table>
 
     <div>
-        <button class="custom_button"><span>Registrar</span></button>
+        <button id="botonRegistrar" class="custom_button"><span>Registrar</span></button>
     </div>
 
 
 
+    <script src="../public/js/registro_linea.js"></script>
+
     <script src="../public/js/controlador_menu.js"></script>
-    <script src="../public/js/controlador_registro_enlinea.js"></script>
 
 
 </body>

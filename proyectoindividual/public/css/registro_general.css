@@ -1,19 +1,19 @@
 
-.divFormIzquierdo form{
+.form form{
     padding-top: 10px;
     width: 200px;  
 }
 
-.divFormIzquierdo div{
+.form div{
 padding-bottom: 20px;  
 }
-.divFormIzquierdo input{
+.form input{
     width: 100%;
     height: 20px; 
     font-size: 18px;   
 }
 
-.divFormIzquierdo select{
+.form select{
         width: 300px;
         display: block;
         height: 30px;
